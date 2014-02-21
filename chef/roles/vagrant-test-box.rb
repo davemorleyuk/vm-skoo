@@ -34,9 +34,9 @@ override_attributes(
 
 run_list(
 #	"recipe[yum]",
-
-	"recipe[apt]",
+	"recipe[apt]",	
 	"recipe[build-essential]",
+	"recipe[vim]",
 	
 		#	"recipe[custom::add_yum_repos]",
 		#	"recipe[openssl]",

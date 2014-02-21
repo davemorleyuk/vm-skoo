@@ -49,3 +49,6 @@
 [submodule "chef/cookbooks/zendserver"]
 	path = chef/cookbooks/zendserver
 	url = https://github.com/zend-patterns/ZendServerChefCookbook.git
+[submodule "chef/cookbooks/vim"]
+	path = chef/cookbooks/vim
+	url = https://github.com/opscode-cookbooks/vim.git
