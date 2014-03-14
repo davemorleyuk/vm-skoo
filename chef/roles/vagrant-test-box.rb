@@ -19,8 +19,8 @@ override_attributes(
 #        "bind_address" => '0.0.0.0'
     },
     "zendserver" => {
-    	"version" => '6.2',
-    	"phpversion" => '5.3',
+    	"version" => '6.3',
+    	"phpversion" => '5.5',
     	"production" => 'false',
     	"apikeyname" => 'admin2',
     	"apikeysecret" => '98167463cc69d2915360609b94404ee2749f33f19d8b39d8671ab4c29321a535',
@@ -37,17 +37,6 @@ run_list(
 	"recipe[apt]",	
 	"recipe[build-essential]",
 	"recipe[vim]",
-	
-		#	"recipe[custom::add_yum_repos]",
-		#	"recipe[openssl]",
-		#	"recipe[apache2]",
-		#	"recipe[mysql]",
-
-		#	"recipe[php]",
-		#	"recipe[php::module_mysql]",
-		#	"recipe[apache2::mod_ssl]",
-		#	"recipe[custom::zend]",
-		#	"recipe[custom::vhosts]"
 
 	"recipe[mysql]",
 	"recipe[mysql::server]",
@@ -56,5 +45,4 @@ run_list(
 
 	"recipe[zendserver::single]",
 	"recipe[custom::vhosts]"
-	
 )
